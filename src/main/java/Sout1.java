@@ -18,7 +18,29 @@ public class Sout1 {
 //        System.out.println(i);
 //        System.out.println(l);
 
-        float f = 3;
+        float f = 3.141592F;
         System.out.println(f);
+        double d = 3.141592;
+        System.out.println(d);
+
+        char c = '각';
+        System.out.println(c);
+        int i = 'a';
+        System.out.println(i);
+
+        char cd = 99;
+        System.out.println(cd);
+
+        byte b = 'a';
+        System.out.println(b);
+
+        char C = 'A';
+        System.out.println(C); // A
+        char cU = 'A' + 32;
+        System.out.println(cU); // a
+
+//        byte bs = '각'; 담을 수 있는 크기가 작아서 안 됨.
+        int ds = '가';
+        System.out.println(ds);
     }
 }
