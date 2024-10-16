@@ -42,5 +42,8 @@ public class Sout1 {
 //        byte bs = '각'; 담을 수 있는 크기가 작아서 안 됨.
         int ds = '가';
         System.out.println(ds);
+
+//        int bi;
+//        System.out.println(bi); 값 할당 외에 모든 것이 안 됨.
     }
 }
