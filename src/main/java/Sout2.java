@@ -17,8 +17,10 @@ public class Sout2 {
         System.out.println("I am IronMan");
 
         String messages = "Hi, my name is mysterious.";
-        System.out.println(messages.indexOf("my"));
-        System.out.println(messages.lastIndexOf("my"));
+        System.out.println(messages.length());
+
+//        System.out.println(messages.indexOf("my"));
+//        System.out.println(messages.lastIndexOf("my"));
 
 //        String message = "Hello World";
 //        System.out.println(message.equalsIgnoreCase("hello World"));
