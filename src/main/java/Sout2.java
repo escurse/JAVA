@@ -16,9 +16,13 @@ public class Sout2 {
                             // 매개 변수
         System.out.println("I am IronMan");
 
-        String comment = "16일 15시 터키 말라티아 동쪽 45km 지역에서 규모 6.0 지진";
-        String fixed = comment.replace("터키", "튀르키예");
-        System.out.println(fixed);
+//        String comment = "플랫폼 쓰지 말고 010-1234-5678로 연락주시면 만원 네고해 드려요.";
+//        String fixed = comment.replaceAll("\\d", "*");
+//        System.out.println(fixed);
+
+//        String comment = "16일 15시 터키 말라티아 동쪽 45km 지역에서 규모 6.0 지진";
+//        String fixed = comment.replace("터키", "튀르키예");
+//        System.out.println(fixed);
 
 //        String contact = "010-1234-5678";
 //        System.out.println( contact.matches("^(010)-(\\d{4})-(\\d{4})$"));
