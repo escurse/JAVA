@@ -19,6 +19,6 @@ public class Sout2 {
         String lv;
         // 지역 변수
 
-
+        final int age; // 자바는 가능, js는 불가능. 값 할당은 한 번만 가능
     }
 }
