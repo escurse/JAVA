@@ -52,9 +52,71 @@ public class Sout2 {
 //        char cb = 'a';
 //        System.out.println(ca == cb);
 
-        int ia = 10;
-        int ib = 3;
-        double result = (byte) ia / (float) ib;
-        System.out.println(result);
+//        int ia = 10;
+//        int ib = 3;
+//        double result = (byte) ia / (float) ib;
+//        System.out.println(result);
+
+        final int start = 2;
+        final int end = 58;
+
+        final int start1 = 16;
+        final int end1 = 192;
+
+        // 코드 작성 시작
+        // 위에 선언된 start 이상, end 이하의 숫자 중 짝수의 합을 출력(System.out.println)하세요.
+        int sum = 0;
+        for (int i = start; i <= end; i += 2) {
+            if (i % 2 == 0) {
+                sum += i;
+            }
+        }
+        System.out.printf("start ~ end가 2 ~ 58일때의 기대 출력: %d\n", sum);
+
+        int sum1 = 0;
+        for (int i = start1; i <= end1; i += 2) {
+            if (i % 2 == 0) {
+                sum1 += i;
+            }
+        }
+        System.out.printf("start ~ end가 16 ~ 192일때의 기대 출력: %d\n", sum1);
+        // 코드 작성 끝
+
+        final int num = 56;
+        final int num1 = 1024;
+        // 위에 선언된 num이 콜라츠 추측에 의해 몇 회만에 1이 되는지의 값을 출력하세요.
+        // 콜라츠 추측은 모든 2 이상의 자연수는 아래 과정을 무한히 반복하면 결국 1이 될 것이라는 추측입니다.
+        // 어떠한 숫자가 홀수일 때 3을 곱하고 1을 더한다.
+        // 어떠한 숫자가 짝수일 때 2로 나눈다.
+        // 코드 작성 시작
+
+        int a = num;
+        int sum2 = 0;
+        while (a != 1) {
+//            if (a % 2 == 1) {
+//                a = a * 3 + 1;
+//                sum2++;
+//            } else {
+//                a = a / 2;
+//                sum2++;
+//            }
+            a = a % 2 == 0 ? a / 2 : a * 3 + 1;
+            sum2++;
+        }
+        System.out.printf("num이 56일때의 기대 출력: %d\n", sum2);
+
+        int b = num1;
+        int sum3 = 0;
+        while (b != 1) {
+            if (b % 2 == 1) {
+                b = b * 3 + 1;
+                sum3++;
+            } else {
+                b = b / 2;
+                sum3++;
+            }
+        }
+        System.out.printf("num이 1024일때의 기대 출력: %d\n", sum3);
+        // 코드 작성 끝
     }
 }
