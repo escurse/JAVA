@@ -20,6 +20,12 @@ public class Sout2 {
         String word1 = "Hello Nice To Meet You";
         String word2 = "great honor";
         String word3 = "some thing";
+
+        String a = word.replace(" ","");
+        String a1 = word1.replace(" ","");
+        String a2 = word2.replace(" ","");
+        String a3 = word3.replace(" ","");
+
         // 위 문자열 word가 포함하는 모든 공백을 제거하고,
         // replace(" ","")
         // 첫자가 대문자가 아니라면 대문자로 만든 뒤,
@@ -28,13 +34,13 @@ public class Sout2 {
         // "great honor" => "Greathonor"
         // "some thing" => "Something"
 
-        System.out.println(word.replace(" ","").substring(0, 1).toUpperCase() + word.replace(" ","").substring(1).toLowerCase());
+        System.out.println(a.substring(0, 1).toUpperCase() + a.substring(1).toLowerCase());
 
-        System.out.println(word1.replace(" ","").substring(0, 1).toUpperCase() + word1.replace(" ","").substring(1).toLowerCase());
+        System.out.println(a1.substring(0, 1).toUpperCase() + a1.substring(1).toLowerCase());
 
-        System.out.println(word2.replace(" ","").substring(0, 1).toUpperCase() + word2.replace(" ","").substring(1).toLowerCase());
+        System.out.println(a2.substring(0, 1).toUpperCase() + a2.substring(1).toLowerCase());
 
-        System.out.println(word3.replace(" ","").substring(0, 1).toUpperCase() + word3.replace(" ","").substring(1).toLowerCase());
+        System.out.println(a3.substring(0, 1).toUpperCase() + a3.substring(1).toLowerCase());
 
 //        String s = "기억이 안 납니다.";
 //        System.out.println(s.substring(0, 4) + s.substring(6, 10));
