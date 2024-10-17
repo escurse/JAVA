@@ -17,7 +17,6 @@ public class Sout2 {
         System.out.println("I am IronMan");
 
 //        String word = "Oil";
-//
 //        String word1 = "gas";
 //
 //        // 주어진 문자열 word가 대문자로 시작하는가의 여부를 출력하세요.
@@ -171,7 +170,5 @@ public class Sout2 {
 //        }
 //        System.out.printf("num이 1024일때의 기대 출력: %d\n", sum3);
 //        // 코드 작성 끝
-
-
     }
 }
