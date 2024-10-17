@@ -17,20 +17,33 @@ public class Sout2 {
         System.out.println("I am IronMan");
 
         String word2 = "HoUr";
+        String word3 = "yes";
+        String word4 = "Nice";
+        String word5 = "absolutE";
         // 위 문자열 word2가 영어 소문자(a-z)로만 이루어져 있는가의 여부를 출력하세요.
         // 97 ~ 122
+        // 65 ~ 90
         // "yes" => true
         // "Nice" => false
         // "absolutE" => false
 
-        String word3 = "yes";
-        String word4 = "Nice";
-        String word5 = "absolutE";
+        char[] c = word5.toCharArray();
 
-        System.out.println(word2.equals(word2.toLowerCase()));
-        System.out.println(word3.equals(word3.toLowerCase()));
-        System.out.println(word4.equals(word4.toLowerCase()));
-        System.out.println(word5.equals(word5.toLowerCase()));
+        boolean yes = false;
+        for (char a : c) {
+            if (a >= 65 && a <= 90) {
+                yes = false;
+                break;
+            } else if (a >= 97 && a <= 122) {
+                yes = true;
+            }
+        }
+        System.out.println(yes);
+
+//        System.out.println(word2.equals(word2.toLowerCase()));
+//        System.out.println(word3.equals(word3.toLowerCase()));
+//        System.out.println(word4.equals(word4.toLowerCase()));
+//        System.out.println(word5.equals(word5.toLowerCase()));
 
 //        String word = "hello";
 //        String word1 = "Hello Nice To Meet You";
