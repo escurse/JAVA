@@ -16,6 +16,27 @@ public class Sout2 {
                             // 매개 변수
         System.out.println("I am IronMan");
 
+        String messages = "Hi, my name is mysterious.";
+        System.out.println(messages.indexOf("my"));
+        System.out.println(messages.lastIndexOf("my"));
+
+//        String message = "Hello World";
+//        System.out.println(message.equalsIgnoreCase("hello World"));
+
+//        System.out.println(message.equals("hello World"));
+
+//        System.out.println(message.startsWith("H"));
+//        System.out.println(message.endsWith("d"));
+
+//        String message = "Hello World";
+//        System.out.println(message.contains("Hell"));
+//        System.out.println(message.contains("world"));
+
+//        String before = "abc";
+//        String after = before.concat(" def");
+//        System.out.println(before);
+//        System.out.println(after);
+
 //        String word = "Oil";
 //        String word1 = "gas";
 //
