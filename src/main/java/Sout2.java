@@ -54,7 +54,7 @@ public class Sout2 {
 
         int ia = 10;
         int ib = 3;
-        double result = (float) ia / ib;
+        double result = (byte) ia / (float) ib;
         System.out.println(result);
     }
 }
