@@ -16,15 +16,39 @@ public class Sout2 {
                             // 매개 변수
         System.out.println("I am IronMan");
 
-        String word = "hello";
-        String word1 = "Hello Nice To Meet You";
-        String word2 = "great honor";
-        String word3 = "some thing";
+        String word2 = "HoUr";
+        // 위 문자열 word2가 영어 소문자(a-z)로만 이루어져 있는가의 여부를 출력하세요.
+        // 97 ~ 122
+        // "yes" => true
+        // "Nice" => false
+        // "absolutE" => false
 
-        String a = word.replace(" ","");
-        String a1 = word1.replace(" ","");
-        String a2 = word2.replace(" ","");
-        String a3 = word3.replace(" ","");
+        String word3 = "yes";
+        String word4 = "Nice";
+        String word5 = "absolutE";
+
+        boolean a = word2.equals(word2.toLowerCase());
+        System.out.println(a);
+
+        boolean a1 = word3.equals(word3.toLowerCase());
+        System.out.println(a1);
+
+        boolean a2 = word4.equals(word4.toLowerCase());
+        System.out.println(a2);
+
+        boolean a3 = word5.equals(word5.toLowerCase());
+        System.out.println(a3);
+
+
+//        String word = "hello";
+//        String word1 = "Hello Nice To Meet You";
+//        String word2 = "great honor";
+//        String word3 = "some thing";
+//
+//        String a = word.replace(" ","");
+//        String a1 = word1.replace(" ","");
+//        String a2 = word2.replace(" ","");
+//        String a3 = word3.replace(" ","");
 
         // 위 문자열 word가 포함하는 모든 공백을 제거하고,
         // replace(" ","")
@@ -34,10 +58,10 @@ public class Sout2 {
         // "great honor" => "Greathonor"
         // "some thing" => "Something"
 
-        System.out.println(a.substring(0, 1).toUpperCase() + a.substring(1).toLowerCase());
-        System.out.println(a1.substring(0, 1).toUpperCase() + a1.substring(1).toLowerCase());
-        System.out.println(a2.substring(0, 1).toUpperCase() + a2.substring(1).toLowerCase());
-        System.out.println(a3.substring(0, 1).toUpperCase() + a3.substring(1).toLowerCase());
+//        System.out.println(a.substring(0, 1).toUpperCase() + a.substring(1).toLowerCase());
+//        System.out.println(a1.substring(0, 1).toUpperCase() + a1.substring(1).toLowerCase());
+//        System.out.println(a2.substring(0, 1).toUpperCase() + a2.substring(1).toLowerCase());
+//        System.out.println(a3.substring(0, 1).toUpperCase() + a3.substring(1).toLowerCase());
 
 //        String s = "기억이 안 납니다.";
 //        System.out.println(s.substring(0, 4) + s.substring(6, 10));
