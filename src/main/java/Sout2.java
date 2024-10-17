@@ -27,10 +27,13 @@ public class Sout2 {
         // "Hello Nice To Meet You" => "Hellonicetomeetyou"
         // "great honor" => "Greathonor"
         // "some thing" => "Something"
-        
+
         System.out.println(word.replace(" ","").substring(0, 1).toUpperCase() + word.replace(" ","").substring(1).toLowerCase());
+
         System.out.println(word1.replace(" ","").substring(0, 1).toUpperCase() + word1.replace(" ","").substring(1).toLowerCase());
+
         System.out.println(word2.replace(" ","").substring(0, 1).toUpperCase() + word2.replace(" ","").substring(1).toLowerCase());
+
         System.out.println(word3.replace(" ","").substring(0, 1).toUpperCase() + word3.replace(" ","").substring(1).toLowerCase());
 
 //        String s = "기억이 안 납니다.";
