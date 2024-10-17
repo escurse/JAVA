@@ -45,7 +45,11 @@ public class Sout2 {
 
         String sa = new String("Hello"); // 0x02, @ax00 ~ @ax04
         String sb = new String("Hello"); // 0x03, @bx00 ~ @bx04
-        System.out.println(sa == sb); // false
+        System.out.println(sa == sb); // false ==> 이렇게 하면 안 됨.
         System.out.println(sa.equals(sb)); // true
+
+        char ca = 'a';
+        char cb = 'a';
+        System.out.println(ca == cb);
     }
 }
