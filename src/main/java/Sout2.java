@@ -17,7 +17,10 @@ public class Sout2 {
         System.out.println("I am IronMan");
 
         String s = "기억이 안 납니다.";
-        System.out.println(s.substring(0, 4) + s.substring(6, 10));
+        System.out.println(s.toCharArray());
+
+//        String s = "기억이 안 납니다.";
+//        System.out.println(s.substring(0, 4) + s.substring(6, 10));
 
 //        String comment = "플랫폼 쓰지 말고 010-1234-5678로 연락주시면 만원 네고해 드려요.";
 //        String fixed = comment.replaceAll("\\d", "*");
