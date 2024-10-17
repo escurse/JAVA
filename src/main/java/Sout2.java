@@ -1,6 +1,9 @@
 public class Sout2 {
     String mv;
     // 멤버 변수
+
+//    final String mv; ==> 멤버 변수를 상수로 만들 경우 값 할당 안 할시 오류 발생.
+
     public static void main(String[] args) {
                             // 매개 변수
         System.out.println("I am IronMan");
