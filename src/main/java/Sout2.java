@@ -16,8 +16,19 @@ public class Sout2 {
                             // 매개 변수
         System.out.println("I am IronMan");
 
-        String messages = "Hi, my name is mysterious.";
-        System.out.println(messages.length());
+        String comment = "16일 15시 터키 말라티아 동쪽 45km 지역에서 규모 6.0 지진";
+        String fixed = comment.replace("터키", "튀르키예");
+        System.out.println(fixed);
+
+//        String contact = "010-1234-5678";
+//        System.out.println( contact.matches("^(010)-(\\d{4})-(\\d{4})$"));
+
+//        System.out.println("=".repeat(50));
+//        System.out.println("ㅋ".repeat(50));
+//        System.out.println("=".repeat(50));
+
+//        String messages = "Hi, my name is mysterious.";
+//        System.out.println(messages.length());
 
 //        System.out.println(messages.indexOf("my"));
 //        System.out.println(messages.lastIndexOf("my"));
