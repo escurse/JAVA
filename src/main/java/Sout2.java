@@ -27,10 +27,10 @@ public class Sout2 {
         String word4 = "Nice";
         String word5 = "absolutE";
 
-        System.out.println(word2.equals(word2.toLowerCase()));;
-        System.out.println(word3.equals(word3.toLowerCase()));;
-        System.out.println(word4.equals(word4.toLowerCase()));;
-        System.out.println(word5.equals(word5.toLowerCase()));;
+        System.out.println(word2.equals(word2.toLowerCase()));
+        System.out.println(word3.equals(word3.toLowerCase()));
+        System.out.println(word4.equals(word4.toLowerCase()));
+        System.out.println(word5.equals(word5.toLowerCase()));
 
 //        String word = "hello";
 //        String word1 = "Hello Nice To Meet You";
