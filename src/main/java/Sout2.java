@@ -35,11 +35,8 @@ public class Sout2 {
         // "some thing" => "Something"
 
         System.out.println(a.substring(0, 1).toUpperCase() + a.substring(1).toLowerCase());
-
         System.out.println(a1.substring(0, 1).toUpperCase() + a1.substring(1).toLowerCase());
-
         System.out.println(a2.substring(0, 1).toUpperCase() + a2.substring(1).toLowerCase());
-
         System.out.println(a3.substring(0, 1).toUpperCase() + a3.substring(1).toLowerCase());
 
 //        String s = "기억이 안 납니다.";
