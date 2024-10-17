@@ -17,14 +17,13 @@ public class Sout2 {
         System.out.println("I am IronMan");
 
         String word = "Oil";
-        String words = new String(word);
 
         String word1 = "gas";
-        String words1 = new String(word1);
+
         // 주어진 문자열 word가 대문자로 시작하는가의 여부를 출력하세요.
         // 코드 작성 시작
-        int a = words.charAt(0);
-        int b = words1.charAt(0);
+        int a = word.charAt(0);
+        int b = word1.charAt(0);
 
         if (a >= 65 && a <= 90) {
             System.out.println(true);
