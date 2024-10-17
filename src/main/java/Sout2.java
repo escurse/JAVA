@@ -16,26 +16,30 @@ public class Sout2 {
                             // 매개 변수
         System.out.println("I am IronMan");
 
-        String word = "Oil";
-
-        String word1 = "gas";
-
-        // 주어진 문자열 word가 대문자로 시작하는가의 여부를 출력하세요.
-        // 코드 작성 시작
-        int a = word.charAt(0);
-        int b = word1.charAt(0);
-
-        if (a >= 65 && a <= 90) {
-            System.out.println(true);
-        } else {
-            System.out.println(false);
-        }
-
-        if (b >= 65 && b <= 90) {
-            System.out.println(true);
-        } else {
-            System.out.println(false);
-        }
+//        String word = "Oil";
+//
+//        String word1 = "gas";
+//
+//        // 주어진 문자열 word가 대문자로 시작하는가의 여부를 출력하세요.
+//        // 코드 작성 시작
+//        char a = word.charAt(0);
+//        char b = word1.charAt(0);
+//
+//        if (a >= 65 && a <= 90) {
+//            System.out.println(true);
+//        } else {
+//            System.out.println(false);
+//        }
+//
+//        if (b >= 65 && b <= 90) {
+//            System.out.println(true);
+//        } else {
+//            System.out.println(false);
+//        }
+//
+//        char firstLetter = word.charAt(0);
+//        boolean result = firstLetter >= 65 && firstLetter <= 90;
+//        System.out.println(result);
 
         // 코드 작성 끝
         // word가 "Oil"일때 기대 출력: true
