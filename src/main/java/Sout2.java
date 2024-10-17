@@ -16,8 +16,22 @@ public class Sout2 {
                             // 매개 변수
         System.out.println("I am IronMan");
 
-        String s = "기억이 안 납니다.";
-        System.out.println(s.toCharArray());
+        String word = "hello";
+        String word1 = "Hello Nice To Meet You";
+        String word2 = "great honor";
+        String word3 = "some thing";
+        // 위 문자열 word가 포함하는 모든 공백을 제거하고,
+        // replace(" ","")
+        // 첫자가 대문자가 아니라면 대문자로 만든 뒤,
+        // 나머지 문자를 모두 소문자로 만드세요.
+        // "Hello Nice To Meet You" => "Hellonicetomeetyou"
+        // "great honor" => "Greathonor"
+        // "some thing" => "Something"
+        
+        System.out.println(word.replace(" ","").substring(0, 1).toUpperCase() + word.replace(" ","").substring(1).toLowerCase());
+        System.out.println(word1.replace(" ","").substring(0, 1).toUpperCase() + word1.replace(" ","").substring(1).toLowerCase());
+        System.out.println(word2.replace(" ","").substring(0, 1).toUpperCase() + word2.replace(" ","").substring(1).toLowerCase());
+        System.out.println(word3.replace(" ","").substring(0, 1).toUpperCase() + word3.replace(" ","").substring(1).toLowerCase());
 
 //        String s = "기억이 안 납니다.";
 //        System.out.println(s.substring(0, 4) + s.substring(6, 10));
