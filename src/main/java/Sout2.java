@@ -1,14 +1,14 @@
 public class Sout2 {
-    String mv;
+//    String mv;
     // 멤버 변수
 
-    public static void sayHello() {
-        System.out.println("Hello");
-    }
-
-    public void sayHi() {
-        System.out.println("Hi");
-    }
+//    public static void sayHello() {
+//        System.out.println("Hello");
+//    }
+//
+//    public void sayHi() {
+//        System.out.println("Hi");
+//    }
 
 //    final String mv; ==> 멤버 변수를 상수로 만들 경우 값 할당 안 할시 오류 발생.
 
@@ -16,10 +16,19 @@ public class Sout2 {
                             // 매개 변수
         System.out.println("I am IronMan");
 
-        sayHello();
+//        String a = new String("Hello");
+//
+//        String.charAt(); // X
+//        String.format(); // O
+//        a.charAt(); // O
+//        a.format(); // X
+        // 비정적 => 객체
+        // 정적 => 타입
 
-        Sout2 s = new Sout2();
-        s.sayHi();
+//        sayHello();
+//
+//        Sout2 s = new Sout2();
+//        s.sayHi();
 
 //        String message = "Hello World";
 //        System.out.println(message);
