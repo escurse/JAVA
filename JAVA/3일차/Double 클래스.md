@@ -7,7 +7,7 @@
 - `MIN_VALUE`: `double`타입이 가질 수 있는 최솟값
 - `NaN`: 숫자가 아닌 값(Not a Number). 내부적으로 `0.0 / 0`연산으로 구현되어 있다.
 - `NEGATIVE_INFINITY`: 음의 무한대. 내부적으로 `-1.0 / 0`연산으로 구현되어 있다.
-- `POSITIVE-INFINITY`: 양의 무한대. 내부적으로 `1.0 / 0`연산으로 구현되어 있다.
+- `POSITIVE_INFINITY`: 양의 무한대. 내부적으로 `1.0 / 0`연산으로 구현되어 있다.
 
 ## 정적 메서드
 - `ifFinite(double d)`: `d`가 유한한가의 여부를 반환한다.
