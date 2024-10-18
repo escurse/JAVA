@@ -24,13 +24,13 @@ public class Sout3 {
 //    public static final String PREFIX = "something";
 //    // static, final, literal ==> 명명법 대문자 스네이크 케이스
 
-//    public static double[] filterDouble(double... input) {
-        // 전달받은 double 가변인자(double[]) input이 가지고 있는 인자 중 다음 조건을 모두 만족하는 인자 만을 가지는 double[]을 반환하세요.
-        // - 0 이상일 것.
-        // - NaN이 아닐 것.
-        // - 유한할 것.
-        // 주의! Java에서 한 번 만들어진 배열의 길이를 바꾸는 것은 불가능함에 유의한다. (별도의 배열을 만들거나, 재정의하여야 함)
-//        return Arrays.stream(input).filter((x) -> Double.isFinite(x) && x >= 0).toArray();
+    public static double[] filterDouble(double... input) {
+//         전달받은 double 가변인자(double[]) input이 가지고 있는 인자 중 다음 조건을 모두 만족하는 인자 만을 가지는 double[]을 반환하세요.
+//         - 0 이상일 것.
+//         - NaN이 아닐 것.
+//         - 유한할 것.
+//         주의! Java에서 한 번 만들어진 배열의 길이를 바꾸는 것은 불가능함에 유의한다. (별도의 배열을 만들거나, 재정의하여야 함)
+        return Arrays.stream(input).filter((x) -> Double.isFinite(x) && x >= 0).toArray();
 
 //        for (int i = 0; i < input.length; i++) {
 //            if (!Double.isFinite(input[i]) || input[i] < 0) {
@@ -68,7 +68,7 @@ public class Sout3 {
 //            }
 //        }
 //        return output;
-//    }
+    }
 
     public static void main(String[] args) {
         System.out.println("I am IronMan");
