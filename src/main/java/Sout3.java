@@ -2,6 +2,16 @@ public class Sout3 {
     public static void main(String[] args) {
         System.out.println("I am IronMan");
 
+
+
+//        int [] nums = new int[] {1, 2, 3};
+
+////        byte b = null; // X
+//        int [] is = null; // O
+//        System.out.println(is);
+//        String s = null;
+//        System.out.println(s);
+
 //        System.out.println(String.join("-", "2024", "10", "18"));
 
 //        int age = 5;
