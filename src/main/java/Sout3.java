@@ -19,17 +19,27 @@ public class Sout3 {
 //        return a + b + c;
 //    }
 
-
+    public static final int MAX_AGE = 50;
+    public static final String PREFIX = "something";
+    // static, final, literal ==> 명명법 대문자 스네이크 케이스
 
     public static void main(String[] args) {
         System.out.println("I am IronMan");
 
-        int pr = 5;
-        Integer rf = 5;
-        pr = rf;
-        rf = pr;
+        int red = 255;
+        System.out.println(Integer.toBinaryString(red));
+        System.out.println(Integer.toOctalString(red));
+        System.out.println(Integer.toHexString(red));
 
-        System.out.println(rf);
+//        int red = Integer.parseInt("ff", 16);
+//        System.out.println(red);
+
+//        int pr = 5;
+//        Integer rf = 5;
+//        pr = rf;
+//        rf = pr;
+//
+//        System.out.println(rf);
 
 //        System.out.println(Math.E);
 
