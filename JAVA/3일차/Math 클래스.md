@@ -11,4 +11,3 @@
 - `negateExact(x)`: 숫자 `x`의 부호를 반전하여 반환한다. 단, 오버플로우가 발생할 경우 예외(`ArithmeticException`)가 발생한다.
 - `subtractExact(a, b)`: 숫자 `a`에서 `b`를 뺀 값을 반환한다. 단, 오버플로우 혹은 언더플로우가 발생할 경우 예외(`ArithmeticException`)가 발생한다.
 - `toIntExact(long x)`: 큰 정수(`long`)인 `a`를 정수(`int`)로 변환하여 반환한다. 단, 오버플로우 혹은 언더플로우가 발생할 경우 예외(`ArithmeticException`)가 발생한다.
-
