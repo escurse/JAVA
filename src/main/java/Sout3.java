@@ -1,6 +1,18 @@
 public class Sout3 {
+
+//    public static void doSomething2(int[] nums) {
+//        nums = null;
+//        System.out.println(nums);
+//    }
+
     public static void main(String[] args) {
         System.out.println("I am IronMan");
+
+
+
+//        int[] nums = {1, 2, 3};
+//        doSomething2(nums);
+//        System.out.println(nums.length);
 
 //        int [] nums = new int[] {1, 2, 3};
 //        for (int num : nums) {
