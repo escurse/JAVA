@@ -2,8 +2,6 @@ public class Sout3 {
     public static void main(String[] args) {
         System.out.println("I am IronMan");
 
-
-
 //        System.out.println(String.join("-", "2024", "10", "18"));
 
 //        int age = 5;
