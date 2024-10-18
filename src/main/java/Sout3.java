@@ -26,10 +26,16 @@ public class Sout3 {
     public static void main(String[] args) {
         System.out.println("I am IronMan");
 
-        int red = 255;
-        System.out.println(Integer.toBinaryString(red));
-        System.out.println(Integer.toOctalString(red));
-        System.out.println(Integer.toHexString(red));
+        Integer i = 557;
+        byte b = i.byteValue();
+        System.out.println(b);
+
+//        int red = 255;
+//        System.out.println(Integer.toBinaryString(red));
+//        System.out.println(Integer.toOctalString(red));
+//        System.out.println(Integer.toHexString(red));
+//
+//        System.out.println(Integer.toString(red));
 
 //        int red = Integer.parseInt("ff", 16);
 //        System.out.println(red);

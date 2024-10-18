@@ -12,6 +12,13 @@
 - `toBinaryString(int i)`: 정수 `i`를 2진법으로 변환한 문자열을 반환한다.
 - `toHexString(int i)`: 정수 `i`를 16진법으로 변환한 문자열을 반환한다.
 - `toOctalString(int i)`: 정수 `i`를 8진법으로 변환한 문자열을 반환한다.
+- `toString(int i)`: 정수 `i`를 문자열로 반환한다.
 
 ## 객체 메서드
--
+- `byteValue()`: 호출 대상이 가진 일반 `int`값을 `byte`타입으로 변환하여 반환한다. 오버플로우가 발생할 수 있음에 유의한다.
+- `doubleValue()`: 호출 대상이 가진 일반 `int`값을 `double`타입으로 변환하여 반환한다.
+- `floatValue()`: 호출 대상이 가진 일반 `int`값을 `float`타입으로 변환하여 반환한다.
+- `intValue()`: 호출 대상이 가진 일반 `int`값을 반환한다.
+- `longValue()`: 호출 대상이 가진 일반 `int`값을 `long`타입으로 변환하여 반환한다.
+- `shortValue()`: 호출 대상이 가진 일반 `int`값을 `short`타입으로 변환하여 반환한다. 오버플로우가 발생할 수 있음에 유의한다.
+- `toString()`: 호출 대상이 가진 `int`를 문자열로 변환하여 반환한다.
