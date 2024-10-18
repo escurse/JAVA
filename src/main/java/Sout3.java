@@ -2,7 +2,13 @@ public class Sout3 {
     public static void main(String[] args) {
         System.out.println("I am IronMan");
 
-        System.out.println(String.join("-", "2024", "10", "18"));
+
+
+//        System.out.println(String.join("-", "2024", "10", "18"));
+
+//        int age = 5;
+//        String ageStr = String.valueOf(age);
+//        System.out.println(ageStr);
 
 //        String toPrint = "";
 //        toPrint += String.format("신라면\t%10d원\n", 4580);
