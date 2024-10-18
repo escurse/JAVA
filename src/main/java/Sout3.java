@@ -1,3 +1,5 @@
+import java.sql.Wrapper;
+
 public class Sout3 {
 
 //    public static void doSomething2(int[] nums) {
@@ -22,7 +24,12 @@ public class Sout3 {
     public static void main(String[] args) {
         System.out.println("I am IronMan");
 
+        int pr = 5;
+        Integer rf = 5;
+        pr = rf;
+        rf = pr;
 
+        System.out.println(rf);
 
 //        System.out.println(Math.E);
 
