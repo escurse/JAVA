@@ -22,8 +22,6 @@ public class Sout3 {
     public static void main(String[] args) {
         System.out.println("I am IronMan");
 
-
-
 //        System.out.println(sum());
 //        System.out.println(sum(1, 4));
 //        System.out.println(sum(1, 2, 2));
