@@ -1,4 +1,5 @@
 import java.sql.Wrapper;
+import java.util.Arrays;
 
 public class Sout3 {
 
@@ -19,20 +20,72 @@ public class Sout3 {
 //        return a + b + c;
 //    }
 
-    public static final int MAX_AGE = 50;
-    public static final String PREFIX = "something";
-    // static, final, literal ==> 명명법 대문자 스네이크 케이스
+//    public static final int MAX_AGE = 50;
+//    public static final String PREFIX = "something";
+//    // static, final, literal ==> 명명법 대문자 스네이크 케이스
+
+    public static double[] filterDouble(double... input) {
+        // 전달받은 double 가변인자(double[]) input이 가지고 있는 인자 중 다음 조건을 모두 만족하는 인자 만을 가지는 double[]을 반환하세요.
+        // - 0 이상일 것.
+        // - NaN이 아닐 것.
+        // - 유한할 것.
+        // 주의! Java에서 한 번 만들어진 배열의 길이를 바꾸는 것은 불가능함에 유의한다. (별도의 배열을 만들거나, 재정의하여야 함)
+//        double[] values = new double[input.length];
+//        for (int i = 0; i < input.length; i++) {
+//            if (Double.isFinite(input[i]) && input[i] >= 0) {
+//                values[i] = input[i];
+//            } else {
+//                values[i] = -1;
+//            }
+//        }
+//        return values;
+
+//        int a = 0;
+//        double[] nums = new double[0];
+//        double[] values = new double[input.length];
+//        for (int i = 0; i < input.length; i++) {
+//            if (Double.isFinite(input[i]) && input[i] >= 0) {
+//                values[a] = input[i];
+//                a++;
+//                nums = new double[a];
+//                for (int sum = 0; sum < a; sum++) {
+//                    nums[sum] = values[sum];
+//                }
+//            }
+//        }
+//        return nums;
+
+        int a = 0;
+        for (double i : input) {
+            if (Double.isFinite(i) && i >= 0) {
+                a++;
+            }
+        }
+        double[] output = new double[a];
+        int b = 0;
+        for (double i : input) {
+            if (Double.isFinite(i) && i >= 0) {
+                output[b++] = i;
+            }
+        }
+        return output;
+    }
 
     public static void main(String[] args) {
         System.out.println("I am IronMan");
 
-        System.out.println(Double.isFinite(55D));
-        System.out.println(Double.isInfinite(55D));
-        System.out.println(Double.isNaN(55D));
+        // Arrays.toString(x): 배열 x가 가지고 있는 인자들을 [,...] 형태의 문자열로 변환하여 반환한다.
+        // 가령 sout( Arrays.toString[new int[] {1, 2, 3} ); 은 "[1, 2, 3]"이 된다.
+        System.out.println(Arrays.toString(filterDouble(3.7D, -1.23, Double.NaN, 57.5, Double.POSITIVE_INFINITY, -6))); // [3.7, 57.5]
+        System.out.println(Arrays.toString(filterDouble(3 + 7, 10 * 0, 0 / 0.0, 3.14 / 0))); // [10, 0]
 
-        Double d = 55D;
-        System.out.println(d.isInfinite());
-        System.out.println(d.isNaN());
+//        System.out.println(Double.isFinite(55D));
+//        System.out.println(Double.isInfinite(55D));
+//        System.out.println(Double.isNaN(55D));
+//
+//        Double d = 55D;
+//        System.out.println(d.isInfinite());
+//        System.out.println(d.isNaN());
 
 //        Integer i = 557;
 //        byte b = i.byteValue();
@@ -153,3 +206,4 @@ public class Sout3 {
 //    }
 
 }
+
