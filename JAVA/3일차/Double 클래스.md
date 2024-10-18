@@ -10,7 +10,7 @@
 - `POSITIVE_INFINITY`: 양의 무한대. 내부적으로 `1.0 / 0`연산으로 구현되어 있다.
 
 ## 정적 메서드
-- `ifFinite(double d)`: `d`가 유한한가의 여부를 반환한다.
+- `isFinite(double d)`: `d`가 유한한가의 여부를 반환한다.
 - `isInfinite(double d)`: `d`가 무한한가의 여부를 반환한다.
 - `isNaN(double d)`: `d`가 `NaN`인가의 여부를 반환한다.
 - `parseDouble(String s)`: 문자열 `s`를 `double`로 변환하여 반환한다. 변환할 수 없는 문자열일 경우 `NumberFormatException`예외가 발생한다.
