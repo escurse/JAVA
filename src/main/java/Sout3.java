@@ -22,6 +22,11 @@ public class Sout3 {
     public static void main(String[] args) {
         System.out.println("I am IronMan");
 
+        long l1 = 500L;
+        long l2 = 2147483648L;
+        System.out.println(Math.toIntExact(l1)); // O
+        Math.toIntExact(l2); // X
+
 //        System.out.println(sum());
 //        System.out.println(sum(1, 4));
 //        System.out.println(sum(1, 2, 2));
