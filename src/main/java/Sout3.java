@@ -2,9 +2,10 @@ public class Sout3 {
     public static void main(String[] args) {
         System.out.println("I am IronMan");
 
-
-
-//        int [] nums = new int[] {1, 2, 3};
+        int [] nums = new int[] {1, 2, 3};
+        for (int num : nums) {
+            System.out.println(num);
+        }
 
 ////        byte b = null; // X
 //        int [] is = null; // O
