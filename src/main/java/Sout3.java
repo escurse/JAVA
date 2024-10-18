@@ -26,8 +26,6 @@ public class Sout3 {
     public static void main(String[] args) {
         System.out.println("I am IronMan");
 
-
-
 //        Integer i = 557;
 //        byte b = i.byteValue();
 //        System.out.println(b);
