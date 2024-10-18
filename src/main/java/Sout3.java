@@ -2,10 +2,19 @@ public class Sout3 {
     public static void main(String[] args) {
         System.out.println("I am IronMan");
 
-        int [] nums = new int[] {1, 2, 3};
-        for (int num : nums) {
-            System.out.println(num);
-        }
+//        int [] nums = new int[] {1, 2, 3};
+//        for (int num : nums) {
+//            System.out.println(num);
+//        }
+
+//        System.out.println(findMax(1, 3 ,5, 3, 3, 2, 1));
+//        System.out.println(findMax(1, 7, 8, 9, 9, 9, 9, 9, 11, 1234, 352632462, 1213));
+
+//        System.out.println(sum(1, 3, 5, 7, 9));
+        // 가변인자 사용 int... nums
+
+//        System.out.println(sum(nums));
+//        System.out.println(sum(new int[] {1, 3, 5, 7, 9}));
 
 ////        byte b = null; // X
 //        int [] is = null; // O
@@ -44,4 +53,34 @@ public class Sout3 {
 ////        System.out.println(st[1]);    // X
 //        System.out.println(cs[1]);      // O , e
     }
+
+//    public static int sum(int... nums) {
+//        int sum = 0;
+//        for (int num : nums) {
+//            sum += num;
+//        }
+//        return sum;
+//    }
+
+//    public static int findMax(int... nums) {
+//        // 전달받은 정수의 가변인자 nums가 가지는 인자 중 가장 큰 값을 반환하는 함수 findMax를 완성하세요.
+//        int max = nums[0];
+//        for (int num : nums) {
+//            if (max < num) {
+//                max = num;
+//            }
+//        }
+//        return max;
+
+//        int max;
+//        for (int i = 1; i < nums.length; i++) {
+//            if (nums[i - 1] > nums[i]) {
+//                max = nums[i];
+//                nums[i] = nums[i - 1];
+//                nums[i - 1] = max;
+//            }
+//        }
+//        return nums[nums.length - 1];
+    }
+
 }
