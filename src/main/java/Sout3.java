@@ -5,9 +5,28 @@ public class Sout3 {
 //        System.out.println(nums);
 //    }
 
+//    public static int sum() {
+//        return 5;
+//    }
+//
+//    public static int sum(int a, int b) {
+//        return a + b;
+//    }
+//
+//    public static int sum(int a, int b, int c) {
+//        return a + b + c;
+//    }
+
+
+
     public static void main(String[] args) {
         System.out.println("I am IronMan");
 
+
+
+//        System.out.println(sum());
+//        System.out.println(sum(1, 4));
+//        System.out.println(sum(1, 2, 2));
 
 
 //        int[] nums = {1, 2, 3};
