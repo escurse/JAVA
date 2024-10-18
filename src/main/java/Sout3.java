@@ -30,15 +30,12 @@ public class Sout3 {
         // - NaN이 아닐 것.
         // - 유한할 것.
         // 주의! Java에서 한 번 만들어진 배열의 길이를 바꾸는 것은 불가능함에 유의한다. (별도의 배열을 만들거나, 재정의하여야 함)
-//        double[] values = new double[input.length];
-//        for (int i = 0; i < input.length; i++) {
-//            if (Double.isFinite(input[i]) && input[i] >= 0) {
-//                values[i] = input[i];
-//            } else {
-//                values[i] = -1;
-//            }
-//        }
-//        return values;
+        for (int i = 0; i < input.length; i++) {
+            if (!Double.isFinite(input[i]) || input[i] < 0) {
+                input[i] = -1D;
+            }
+        }
+        return input;
 
 //        int a = 0;
 //        double[] nums = new double[0];
@@ -55,20 +52,20 @@ public class Sout3 {
 //        }
 //        return nums;
 
-        int a = 0;
-        for (double i : input) {
-            if (Double.isFinite(i) && i >= 0) {
-                a++;
-            }
-        }
-        double[] output = new double[a];
-        int b = 0;
-        for (double i : input) {
-            if (Double.isFinite(i) && i >= 0) {
-                output[b++] = i;
-            }
-        }
-        return output;
+//        int a = 0;
+//        for (double i : input) {
+//            if (Double.isFinite(i) && i >= 0) {
+//                a++;
+//            }
+//        }
+//        double[] output = new double[a];
+//        int b = 0;
+//        for (double i : input) {
+//            if (Double.isFinite(i) && i >= 0) {
+//                output[b++] = i;
+//            }
+//        }
+//        return output;
     }
 
     public static void main(String[] args) {
