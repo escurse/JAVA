@@ -2,6 +2,8 @@ public class Sout3 {
     public static void main(String[] args) {
         System.out.println("I am IronMan");
 
+        System.out.println(String.join("-", "2024", "10", "18"));
+
 //        String toPrint = "";
 //        toPrint += String.format("신라면\t%10d원\n", 4580);
 //        toPrint += String.format("찰옥수수\t%10d원\n", 12500);
