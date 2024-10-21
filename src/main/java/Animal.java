@@ -6,4 +6,12 @@ public abstract class Animal {
 
     public abstract void move();
     // Animal의 이동 행동 단위를 구현하기 위한 메서드
+
+    public void sayName() {
+        System.out.println(name);
+    }
+
+//    public void sayName() {
+//        System.out.println(name);
+//    }
 }

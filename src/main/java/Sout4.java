@@ -1,6 +1,7 @@
 public class Sout4 {
     public static void main(String[] args) {
-        Dog dog = new Dog();
+        Animal dog = new Dog();
+        dog.sayName();
 
         Cat cat = new Cat();
 
