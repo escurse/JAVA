@@ -1,16 +1,37 @@
 public class Sout4 {
     public static void main(String[] args) {
         Dog dog = new Dog();
-        dog.move();
 
         Cat cat = new Cat();
-        cat.move();
 
         Snake snake = new Snake();
-        snake.move();
 
         Crow crow = new Crow();
-        crow.move();
+
+        Object[] animals = {dog, cat, snake, 12, 124, false, crow};
+        for (Object x : animals) {
+            if (x instanceof Animal) {
+                Animal animal = (Animal) x;
+                animal.move();
+            }
+        }
+
+//        Animal[] animals = {dog, cat, snake, crow};
+//        for (Animal animal : animals) {
+//            animal.move();
+//        }
+
+//        Dog dog = new Dog();
+//        dog.move();
+//
+//        Cat cat = new Cat();
+//        cat.move();
+//
+//        Snake snake = new Snake();
+//        snake.move();
+//
+//        Crow crow = new Crow();
+//        crow.move();
 
 //        Animal animal = new Animal();
 //        animal.name = "햄스터";
