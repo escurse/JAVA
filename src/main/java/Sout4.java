@@ -1,7 +1,10 @@
-import java.io.IOException;
-
 public class Sout4 {
     public static void main(String[] args) {
+        try {
+            int someInt = Integer.parseInt("Hello");
+        } catch (NumberFormatException e) {
+            System.out.println("숫자로 변환할 수 없습니다.");
+        }
 
         // throw new NullPointerException   O
         // throw new IOException            X try-catch 필수
