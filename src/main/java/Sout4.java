@@ -1,27 +1,94 @@
 import java.util.Arrays;
 
 public class Sout4 {
-//    public static boolean transformable(String input) {
-//        // 입력된 문자열 input이 정수(int)형으로 변환될 수 있는가의 여부를 반환하는 메서드를 작성하세요.
-//        // 반드시 Integer.parse 메서드를 사용해야 합니다.
-//        try {
-//            Integer.parseInt(input);
-//        } catch (NumberFormatException e) {
-//            return false;
-//        }
-//        return true;
-//    }
+    public static boolean transformable(String input) {
+        // 입력된 문자열 input이 정수(int)형으로 변환될 수 있는가의 여부를 반환하는 메서드를 작성하세요.
+        // 반드시 Integer.parse 메서드를 사용해야 합니다.
+        try {
+            Integer.parseInt(input);
+        } catch (NumberFormatException e) {
+            return false;
+        }
+        return true;
+    }
 
-//    public static Integer sum(int a, int b) {
-//        // 두 정수 a, b의 합을 Integer로 반환하는 메서드를 작성하세요.
-//        // 단, 두 정수의 합이 int 범위를 벗어나는 경우 null을 반환해야 합니다.
+    public static Integer sum(int a, int b) {
+        // 두 정수 a, b의 합을 Integer로 반환하는 메서드를 작성하세요.
+        // 단, 두 정수의 합이 int 범위를 벗어나는 경우 null을 반환해야 합니다.
 //        long c = (long) a + (long) b;
 //        if (c < Integer.MIN_VALUE || c > Integer.MAX_VALUE) {
 //            return null;
 //        } else {
 //            return Integer.valueOf((int)c);
 //        }
-//    }
+
+        try {
+            return Math.addExact(a , b);
+        }  catch (ArithmeticException e) {
+//        catch (Throwable e) {}
+            return null;
+        }
+    }
+
+    public static boolean checkBirth(String birth) {
+        // 전달받은 birth가 올바른 주민등록번호 앞자리인가의 여부를 반환하세요.
+        // 추가로, 년/월/일을 출력하세요.
+        // birth의 길이가 6자리인 경우: yyMMdd의 형식입니다.
+        // birth의 길이가 5자리인 경우: yMMdd의 형식이고, 이는 01년생부터 09년생임을 의미할 수도 있습니다.
+        // birth의 길이가 4자리인 경우: MMdd의 형식이고, 이는 00년생임을 의미할 수도 있습니다.
+        // birth의 길이가 3자리인 경우: Mdd의 형식이고, 이는 00년생, 1월~9월생임을 의미할 수도 있습니다.
+        // checkBirth("960713");    96/07/13 출력 후 true 반환
+        // checkBirth("01213");     00/12/13 출력 후 true 반환
+        // checkBirth("70808");     07/08/08 출력 후 true 반환
+        // checkBirth("511");       00/05/11 출력 후 true 반환
+        // checkBirth("131");       00/01/31 출력 후 true 반환
+        // checkBirth("1317");      false 반환(13월은 없음)
+        // checkBirth("09/07/16");  false 반환(올바른 형식이 아님)
+        // 단, 모든 달의 일수는 31일까지 존재한다고 가정합니다. (30일까지 존재하는 달 및 윤달 무시)
+        switch (birth.length()) {
+            case 1, 2: {
+                return false;
+            }
+            case 3: {
+                birth = "000" + birth;
+                if(Integer.parseInt(birth.substring(2, 4)) > 12 || Integer.parseInt(birth.substring(2, 4)) < 1 || Integer.parseInt(birth.substring(4, 6)) > 31 || Integer.parseInt(birth.substring(4, 6)) < 1) {
+                    return false;
+                } else {
+                    System.out.println(String.join("/", birth.substring(0, 2), birth.substring(2, 4), birth.substring(4, 6)));
+                    return true;
+                }
+            }
+            case 4: {
+                birth = "00" + birth;
+                if(Integer.parseInt(birth.substring(2, 4)) > 12 || Integer.parseInt(birth.substring(2, 4)) < 1 || Integer.parseInt(birth.substring(4, 6)) > 31 || Integer.parseInt(birth.substring(4, 6)) < 1) {
+                    return false;
+                } else {
+                    System.out.println(String.join("/", birth.substring(0, 2), birth.substring(2, 4), birth.substring(4, 6)));
+                    return true;
+                }
+            }
+            case 5: {
+                birth = "0" + birth;
+                if(Integer.parseInt(birth.substring(2, 4)) > 12 || Integer.parseInt(birth.substring(2, 4)) < 1 || Integer.parseInt(birth.substring(4, 6)) > 31 || Integer.parseInt(birth.substring(4, 6)) < 1) {
+                    return false;
+                } else {
+                    System.out.println(String.join("/", birth.substring(0, 2), birth.substring(2, 4), birth.substring(4, 6)));
+                    return true;
+                }
+            }
+            case 6: {
+                if(Integer.parseInt(birth.substring(2, 4)) > 12 || Integer.parseInt(birth.substring(2, 4)) < 1 || Integer.parseInt(birth.substring(4, 6)) > 31 || Integer.parseInt(birth.substring(4, 6)) < 1) {
+                    return false;
+                } else {
+                    System.out.println(String.join("/", birth.substring(0, 2), birth.substring(2, 4), birth.substring(4, 6)));
+                    return true;
+                }
+            }
+            default: {
+                return false;
+            }
+        }
+    }
 
 //    public static int getMin(int a, int b) {
 //        // a와 b 중 더 작은 수를 반환합니다.
@@ -107,6 +174,14 @@ public class Sout4 {
 //    }
 
     public static void main(String[] args) {
+
+        System.out.println(checkBirth("960713"));
+        System.out.println(checkBirth("01213"));
+        System.out.println(checkBirth("70808"));
+        System.out.println(checkBirth("511"));
+        System.out.println(checkBirth("131"));
+        System.out.println(checkBirth("1317"));
+        System.out.println(checkBirth("09/07/16"));
 
 //        System.out.println(average(1, 2, 3, 4, 5));
 
