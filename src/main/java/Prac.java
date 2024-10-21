@@ -34,11 +34,6 @@ public class Prac {
 //        return i;
 //    }
 
-
-    public static int perfectNum() {
-        return 0;
-    }
-
 //    public static int rankOf(int... n) {
 //        int t;
 //        int a = n[0];
@@ -61,32 +56,32 @@ public class Prac {
 //        return 0;
 //    }
 
-    //    1 1 2 3 5 7 9
+//    1 1 2 3 5 7 9
 //
-    public static int Fibonacci(int result) {
-        // 피보나치 수열 전체 출력
-        if (result <= 0) return 0;
-        if (result == 1) return 1;
+public static int Fibonacci(int result) {
+    // 피보나치 수열 전체 출력
+    if (result <= 0) return 0;
+    if (result == 1) return 1;
 
-        int a = 0; // F(0)
-        int b = 1; // F(1)
-        int fib = 0;
+    int a = 0; // F(0)
+    int b = 1; // F(1)
+    int fib = 0;
 
-        for (int i = 2; i <= result; i++) {
-            fib = a + b; // F(n) = F(n-1) + F(n-2)
-            a = b; // F(n-1)
-            b = fib; // F(n)
-        }
-
-        return fib;
+    for (int i = 2; i <= result; i++) {
+        fib = a + b; // F(n) = F(n-1) + F(n-2)
+        a = b; // F(n-1)
+        b = fib; // F(n)
     }
 
+    return fib;
+}
 
-    public static void main(String[] args) {
-        System.out.println(Fibonacci(10));
+
+public static void main(String[] args) {
+    System.out.println(Fibonacci(10));
 //        System.out.println(rankOf(8, 2, 3, 6, 1, 7, 12, 6, 5, 4, 11, 7, 2, 4, 5, 8, 8, 8, 8, 10, 1));
 //        System.out.println(getMax(5123, 5123));
 //        System.out.println(getMul(201, 10));
 //        System.out.println(Odd(1, 3, 5, 7, 12, 34, 56, 64, 21, 37, 9, 9));
-    }
+}
 }
