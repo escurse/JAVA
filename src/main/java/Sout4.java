@@ -11,7 +11,7 @@ public class Sout4 {
 //        }
 //        return true;
 //    }
-//
+
 //    public static Integer sum(int a, int b) {
 //        // 두 정수 a, b의 합을 Integer로 반환하는 메서드를 작성하세요.
 //        // 단, 두 정수의 합이 int 범위를 벗어나는 경우 null을 반환해야 합니다.
@@ -19,7 +19,7 @@ public class Sout4 {
 //        if (c < Integer.MIN_VALUE || c > Integer.MAX_VALUE) {
 //            return null;
 //        } else {
-//            return (int) c;
+//            return Integer.valueOf((int)c);
 //        }
 //    }
 
@@ -38,20 +38,40 @@ public class Sout4 {
 //    }
 
 //    public static int countCollatz(int num) {
-//        // 주어진 num이 몇 회만에 콜라츠 추측을 만족하는가를 반환합니다.
-//        // 홀수 *3 + 1;
-//        // 짝수 /2;
+        // 주어진 num이 몇 회만에 콜라츠 추측을 만족하는가를 반환합니다.
+        // 홀수 *3 + 1;
+        // 짝수 /2;
 //        int result = 0;
-//        while (num != 1) {
-//            if (num % 2 == 1) {
-//                num = num * 3 + 1;
-//                result++;
-//            } else {
-//                num /= 2;
-//                result++;
+//        if (num <= 0) {
+//            System.out.println("값이 잘못 입력되었습니다.");
+//            return num;
+//        } else {
+//            while (num != 1) {
+//                if (num % 2 == 1) {
+//                    num = num * 3 + 1;
+//                    result++;
+//                } else {
+//                    num /= 2;
+//                    result++;
+//                }
 //            }
+//            return result;
 //        }
-//        return result;
+
+//        int result;
+//        if (num >= 1) {
+//            for (result = 0; num != 1; result++) {
+//                if (num % 2 == 0) {
+//                    num /= 2;
+//                } else {
+//                    num = num * 3 + 1;
+//                }
+//            }
+//            return result;
+//        } else {
+//            System.out.println("값이 잘못 입력되었습니다.");
+//            return num;
+//        }
 //    }
 
 //    public static String[] filterCapital(String...input) {
@@ -90,7 +110,7 @@ public class Sout4 {
 
 //        System.out.println(average(1, 2, 3, 4, 5));
 
-//        System.out.println(countCollatz(1024));
+//        System.out.println(countCollatz(1234));
 
 //        System.out.println(Arrays.toString(filterCapital("abc", "Abc", "ABC", "AAA", "acsd", "qwer", "QWER")));
 
