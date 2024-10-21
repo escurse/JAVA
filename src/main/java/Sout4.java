@@ -120,6 +120,9 @@ public class Sout4 {
 //        } else {
 //            result = a;
 //        }
+
+//            result = Math.min(a,b);
+
 //        return result;
 //    }
 
