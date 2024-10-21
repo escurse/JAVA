@@ -10,8 +10,13 @@ public class Sout4 {
 
         Animal dog = new Animal();
         dog.name = "강아지";
+
+        Animal snake = new Animal();
+        snake.name = "뱀";
+
         animal.move();
         cat.move();
         dog.move();
+        snake.move();
     }
 }
