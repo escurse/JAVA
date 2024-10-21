@@ -1,6 +1,5 @@
 public class Dog extends Animal {
     String name = "강아지";
-    int age = 10;
 
     @Override
     public void move() {

@@ -3,6 +3,15 @@ public class Sout4 {
         Dog dog = new Dog();
         dog.move();
 
+        Cat cat = new Cat();
+        cat.move();
+
+        Snake snake = new Snake();
+        snake.move();
+
+        Crow crow = new Crow();
+        crow.move();
+
 //        Animal animal = new Animal();
 //        animal.name = "햄스터";
 ////        animal.move();
