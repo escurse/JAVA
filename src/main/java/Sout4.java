@@ -1,13 +1,15 @@
 public class Sout4 {
     public static void main(String[] args) {
-        try {
-            int someInt2 = Integer.parseInt("124");
-            System.out.println("변환한 숫자 : " + someInt2);
-            int someInt = Integer.parseInt("Hello");
-            System.out.println("변환한 숫자 : " + someInt);
-        } catch (Throwable e) {
-            System.out.println("숫자로 변환할 수 없습니다.");
-        }
+
+
+//        try {
+//            int someInt2 = Integer.parseInt("124");
+//            System.out.println("변환한 숫자 : " + someInt2);
+//            int someInt = Integer.parseInt("Hello");
+//            System.out.println("변환한 숫자 : " + someInt);
+//        } catch (Throwable e) {
+//            System.out.println("숫자로 변환할 수 없습니다.");
+//        }
 
         // throw new NullPointerException   O
         // throw new IOException            X try-catch 필수
