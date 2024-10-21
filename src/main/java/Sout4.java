@@ -45,49 +45,68 @@ public class Sout4 {
         // checkBirth("1317");      false 반환(13월은 없음)
         // checkBirth("09/07/16");  false 반환(올바른 형식이 아님)
         // 단, 모든 달의 일수는 31일까지 존재한다고 가정합니다. (30일까지 존재하는 달 및 윤달 무시)
-        switch (birth.length()) {
-            case 1, 2: {
-                return false;
-            }
-            case 3: {
-                birth = "000" + birth;
-                if(Integer.parseInt(birth.substring(2, 4)) > 12 || Integer.parseInt(birth.substring(2, 4)) < 1 || Integer.parseInt(birth.substring(4, 6)) > 31 || Integer.parseInt(birth.substring(4, 6)) < 1) {
-                    return false;
-                } else {
-                    System.out.println(String.join("/", birth.substring(0, 2), birth.substring(2, 4), birth.substring(4, 6)));
-                    return true;
-                }
-            }
-            case 4: {
-                birth = "00" + birth;
-                if(Integer.parseInt(birth.substring(2, 4)) > 12 || Integer.parseInt(birth.substring(2, 4)) < 1 || Integer.parseInt(birth.substring(4, 6)) > 31 || Integer.parseInt(birth.substring(4, 6)) < 1) {
-                    return false;
-                } else {
-                    System.out.println(String.join("/", birth.substring(0, 2), birth.substring(2, 4), birth.substring(4, 6)));
-                    return true;
-                }
-            }
-            case 5: {
-                birth = "0" + birth;
-                if(Integer.parseInt(birth.substring(2, 4)) > 12 || Integer.parseInt(birth.substring(2, 4)) < 1 || Integer.parseInt(birth.substring(4, 6)) > 31 || Integer.parseInt(birth.substring(4, 6)) < 1) {
-                    return false;
-                } else {
-                    System.out.println(String.join("/", birth.substring(0, 2), birth.substring(2, 4), birth.substring(4, 6)));
-                    return true;
-                }
-            }
-            case 6: {
-                if(Integer.parseInt(birth.substring(2, 4)) > 12 || Integer.parseInt(birth.substring(2, 4)) < 1 || Integer.parseInt(birth.substring(4, 6)) > 31 || Integer.parseInt(birth.substring(4, 6)) < 1) {
-                    return false;
-                } else {
-                    System.out.println(String.join("/", birth.substring(0, 2), birth.substring(2, 4), birth.substring(4, 6)));
-                    return true;
-                }
-            }
-            default: {
-                return false;
-            }
+
+        int birthNum;
+        try {
+            birthNum = Integer.parseInt(birth);
+        } catch (NumberFormatException e) {
+            return false;
         }
+        if (birthNum < 101 || birthNum > 991231) {
+            return false;
+        }
+        int year = birthNum / 10000;
+        int month = birthNum % 10000 / 100;
+        int day = birthNum % 100;
+        if (month < 1 || month > 12 || day < 1 || day > 31) {
+            return false;
+        }
+        System.out.println(String.format("%02d/%02d/%02d", year, month, day));
+        return true;
+
+//        switch (birth.length()) {
+//            case 1, 2: {
+//                return false;
+//            }
+//            case 3: {
+//                birth = "000" + birth;
+//                if(Integer.parseInt(birth.substring(2, 4)) > 12 || Integer.parseInt(birth.substring(2, 4)) < 1 || Integer.parseInt(birth.substring(4, 6)) > 31 || Integer.parseInt(birth.substring(4, 6)) < 1) {
+//                    return false;
+//                } else {
+//                    System.out.println(String.join("/", birth.substring(0, 2), birth.substring(2, 4), birth.substring(4, 6)));
+//                    return true;
+//                }
+//            }
+//            case 4: {
+//                birth = "00" + birth;
+//                if(Integer.parseInt(birth.substring(2, 4)) > 12 || Integer.parseInt(birth.substring(2, 4)) < 1 || Integer.parseInt(birth.substring(4, 6)) > 31 || Integer.parseInt(birth.substring(4, 6)) < 1) {
+//                    return false;
+//                } else {
+//                    System.out.println(String.join("/", birth.substring(0, 2), birth.substring(2, 4), birth.substring(4, 6)));
+//                    return true;
+//                }
+//            }
+//            case 5: {
+//                birth = "0" + birth;
+//                if(Integer.parseInt(birth.substring(2, 4)) > 12 || Integer.parseInt(birth.substring(2, 4)) < 1 || Integer.parseInt(birth.substring(4, 6)) > 31 || Integer.parseInt(birth.substring(4, 6)) < 1) {
+//                    return false;
+//                } else {
+//                    System.out.println(String.join("/", birth.substring(0, 2), birth.substring(2, 4), birth.substring(4, 6)));
+//                    return true;
+//                }
+//            }
+//            case 6: {
+//                if(Integer.parseInt(birth.substring(2, 4)) > 12 || Integer.parseInt(birth.substring(2, 4)) < 1 || Integer.parseInt(birth.substring(4, 6)) > 31 || Integer.parseInt(birth.substring(4, 6)) < 1) {
+//                    return false;
+//                } else {
+//                    System.out.println(String.join("/", birth.substring(0, 2), birth.substring(2, 4), birth.substring(4, 6)));
+//                    return true;
+//                }
+//            }
+//            default: {
+//                return false;
+//            }
+//        }
     }
 
 //    public static int getMin(int a, int b) {
