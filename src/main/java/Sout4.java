@@ -1,21 +1,27 @@
+import java.io.IOException;
+
 public class Sout4 {
     public static void main(String[] args) {
-        Animal dog = new Dog();
-        dog.sayName();
 
-        Cat cat = new Cat();
+        // throw new NullPointerException   O
+        // throw new IOException            X try-catch 필수
 
-        Snake snake = new Snake();
-
-        Crow crow = new Crow();
-
-        Object[] animals = {dog, cat, snake, 12, 124, false, crow};
-        for (Object x : animals) {
-            if (x instanceof Animal) {
-                Animal animal = (Animal) x;
-                animal.move();
-            }
-        }
+//        Animal dog = new Dog();
+//        dog.sayName();
+//
+//        Cat cat = new Cat();
+//
+//        Snake snake = new Snake();
+//
+//        Crow crow = new Crow();
+//
+//        Object[] animals = {dog, cat, snake, 12, 124, false, crow};
+//        for (Object x : animals) {
+//            if (x instanceof Animal) {
+//                Animal animal = (Animal) x;
+//                animal.move();
+//            }
+//        }
 
 //        Animal[] animals = {dog, cat, snake, crow};
 //        for (Animal animal : animals) {
