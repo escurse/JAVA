@@ -13,48 +13,49 @@
 import java.util.Arrays;
 
 public class Prac {
-//    public static int getMax(int a, int b) {
-//        return Math.max(a, b);
-//    }
-//
-//    public static boolean getMul(int a, int b) {
-//        return a % b == 0;
-//    }
-//
-//    public static int Odd(int... a) {
-//        int i = 0;
-//        for (int items : a) {
-////            if (items % 2 == 1) {
-////                i++;
-////            }
-//            if (items % 3 == 0) {
+    public static int getMax(int a, int b) {
+        return Math.max(a, b);
+    }
+
+    public static boolean getMul(int a, int b) {
+        return a % b == 0;
+    }
+
+
+    public static int Odd(int... a) {
+        int i = 0;
+        for (int items : a) {
+//            if (items % 2 == 1) {
 //                i++;
 //            }
-//        }
-//        return i;
-//    }
+            if (items % 3 == 0) {
+                i++;
+            }
+        }
+        return i;
+    }
 
-//    public static int rankOf(int... n) {
-//        int t;
-//        int a = n[0];
-//        int b = 0;
-//        for (int i = 0; i < n.length - 1; i++) {
-//            for (int j = 0; j < n.length - 1; j++) {
-//                if (n[j] > n[j + 1]) {
-//                    t = n[j];
-//                    n[j] = n[j + 1];
-//                    n[j + 1] = t;
-//                }
-//            }
-//        }
-//        for (int i = 0; i < n.length - 1; i++) {
-//            if (a == n[i]) {
-//                return n.length - b;
-//            }
-//            b++;
-//        }
-//        return 0;
-//    }
+    public static int rankOf(int... n) {
+        int t;
+        int a = n[0];
+        int b = 0;
+        for (int i = 0; i < n.length - 1; i++) {
+            for (int j = 0; j < n.length - 1; j++) {
+                if (n[j] > n[j + 1]) {
+                    t = n[j];
+                    n[j] = n[j + 1];
+                    n[j + 1] = t;
+                }
+            }
+        }
+        for (int i = 0; i < n.length - 1; i++) {
+            if (a == n[i]) {
+                return n.length - b;
+            }
+            b++;
+        }
+        return 0;
+    }
 
 //    1 1 2 3 5 7 9
 //
