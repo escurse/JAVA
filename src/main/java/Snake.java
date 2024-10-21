@@ -3,6 +3,6 @@ public class Snake extends Animal{
 
     @Override
     public void move() {
-        System.out.println(name + "이 음습하게 움직였다.");
+        System.out.println(name + "이 기어서 움직였다.");
     }
 }

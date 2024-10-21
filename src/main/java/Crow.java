@@ -3,6 +3,6 @@ public class Crow extends Animal {
 
     @Override
     public void move() {
-        System.out.println(name + "가 사납게 움직였다.");
+        System.out.println(name + "가 총총 움직였다.");
     }
 }
